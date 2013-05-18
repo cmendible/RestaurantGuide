@@ -16,8 +16,8 @@ namespace RestGuide
     {
         public List<Restaurant> Restaurants;
 
-        public RestGuideApplication(IntPtr handle)
-            : base(handle)
+        public RestGuideApplication(IntPtr javaReference, Android.Runtime.JniHandleOwnership transfer)
+			: base(javaReference, transfer)
         { }
 
         public override void OnCreate()

@@ -23,7 +23,7 @@ namespace RestGuide
             SetContentView(Resource.Layout.Main);
 
             _list = FindViewById<ListView>(Resource.Id.List);
-            _list.ItemClick += new System.EventHandler<ItemEventArgs>(_list_ItemClick);
+			_list.ItemClick += new System.EventHandler<AdapterView.ItemClickEventArgs>(_list_ItemClick);
 
 
             // Get our button from the layout resource,
@@ -44,7 +44,7 @@ namespace RestGuide
             _list.Adapter = new MainListAdapter(this, restaurants);
         }
 
-        private void _list_ItemClick(object sender, ItemEventArgs e)
+		private void _list_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             System.Console.WriteLine("[MainActivity] _list_ItemClick " + e.Position);
 

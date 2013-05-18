@@ -1,7 +1,9 @@
-
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestGuide", "RestGuide.csproj", "{C126D133-851C-4E20-BE27-DBB3138EFFB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestGuide_Android", "..\RestGuide_Android\RestGuide_Android.csproj", "{B1B980A0-11C2-40BF-9503-F309445CEAA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,6 +13,14 @@ Global
 		Release|iPhone = Release|iPhone
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Release|iPhone.Build.0 = Release|Any CPU
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{B1B980A0-11C2-40BF-9503-F309445CEAA7}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
 		{C126D133-851C-4E20-BE27-DBB3138EFFB5}.Debug|iPhone.ActiveCfg = Debug|iPhone
 		{C126D133-851C-4E20-BE27-DBB3138EFFB5}.Debug|iPhone.Build.0 = Debug|iPhone
 		{C126D133-851C-4E20-BE27-DBB3138EFFB5}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
@@ -21,6 +31,6 @@ Global
 		{C126D133-851C-4E20-BE27-DBB3138EFFB5}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = GourmetTraveller.csproj
+		StartupItem = ..\RestGuide_Android\RestGuide_Android.csproj
 	EndGlobalSection
 EndGlobal

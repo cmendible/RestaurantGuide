@@ -30,7 +30,7 @@ namespace RestGuide
 			{
 				ScalesPageToFit = false
 			};
-			webView.LoadHtmlString(FormatText(), new NSUrl());
+			webView.LoadHtmlString(FormatText(), new NSUrl(""));
 			
 			// Set the web view to fit the width of the app.
             webView.SizeToFit();
