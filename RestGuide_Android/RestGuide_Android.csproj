@@ -47,6 +47,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
+    <Reference Include="RestGuide_Core">
+      <HintPath>..\RestGuide_Core\bin\Debug\RestGuide_Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Activities\RestaurantActivity.cs" />
@@ -55,8 +58,6 @@
     <Compile Include="Main.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DataClasses\Restaurant.cs" />
-    <Compile Include="DataClasses\RestaurantRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />

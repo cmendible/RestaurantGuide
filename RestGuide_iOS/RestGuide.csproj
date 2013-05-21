@@ -66,6 +66,9 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="monotouch" />
+    <Reference Include="RestGuide_Core">
+      <HintPath>..\RestGuide_Core\bin\Debug\RestGuide_Core.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -73,15 +76,10 @@
     <Compile Include="AppController.cs" />
     <Compile Include="MainViewController.cs" />
     <Compile Include="RestaurantViewController.cs" />
-    <Compile Include="DataClasses\Restaurant.cs" />
-    <Compile Include="DataClasses\RestaurantRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.png" />
     <Content Include="restaurants.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DataClasses\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
