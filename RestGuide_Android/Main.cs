@@ -28,16 +28,9 @@ namespace RestGuide
             // I never said this was the best place for loading data
             // just that it works for now...
             var s = Resources.OpenRawResource(Resource.Raw.restaurants);
-            using (TextReader reader = new StreamReader(s))
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(List<Restaurant>));
-                Restaurants = (List<Restaurant>)serializer.Deserialize(reader);
-            }
+			Restaurants = RestaurantRepository.GetAll(s);
             Console.WriteLine("[RestGuideApplication] Loaded {0} restaurants", Restaurants.Count);
         }
-
-
-
 
         // readStream is the stream you need to read
         // writeStream is the stream you want to write to

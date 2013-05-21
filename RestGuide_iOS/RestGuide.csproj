@@ -72,8 +72,9 @@
     <Compile Include="Main.cs" />
     <Compile Include="AppController.cs" />
     <Compile Include="MainViewController.cs" />
-    <Compile Include="DataClasses\Objects.cs" />
     <Compile Include="RestaurantViewController.cs" />
+    <Compile Include="DataClasses\Restaurant.cs" />
+    <Compile Include="DataClasses\RestaurantRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Default.png" />

@@ -28,13 +28,8 @@ namespace RestGuide
         {
             base.ViewDidLoad ();
 
-			#region load data from XML
-			using (TextReader reader = new StreamReader("restaurants.xml"))
-			{
-				XmlSerializer serializer = new XmlSerializer(typeof(List<Restaurant>));
-				Restaurants = (List<Restaurant>)serializer.Deserialize(reader);
-			}
-			#endregion
+			Restaurants = RestaurantRepository.GetAll("restaurants.xml");
+
 			TableView.Source = new TableViewSource (Restaurants, this);
 			TableView.AutoresizingMask = UIViewAutoresizing.FlexibleHeight|
 			                       UIViewAutoresizing.FlexibleWidth;
